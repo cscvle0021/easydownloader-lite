@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasyDownloader Lite - Download Videos Easily</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>EasyDownloader Lite</h1>
+            <p>Download videos from popular platforms quickly and easily</p>
+        </header>
+
+        <div class="download-box">
+            <div class="input-group">
+                <input type="text" id="videoUrl" placeholder="Paste video URL here...">
+                <button id="fetchBtn">Fetch Video</button>
+            </div>
+
+            <div id="videoInfo" class="hidden">
+                <div class="thumbnail-container">
+                    <img id="thumbnail" src="" alt="Video thumbnail">
+                    <h3 id="videoTitle"></h3>
+                </div>
+
+                <div class="format-selection">
+                    <label for="formatSelect">Select Quality:</label>
+                    <select id="formatSelect">
+                        <option value="">Choose a format</option>
+                    </select>
+                    <button id="downloadBtn">Download</button>
+                </div>
+            </div>
+
+            <div id="loading" class="hidden">
+                <div class="spinner"></div>
+                <p>Processing your request...</p>
+            </div>
+
+            <div id="error" class="hidden">
+                <p class="error-message"></p>
+            </div>
+        </div>
+
+        <footer>
+            <p>EasyDownloader Lite &copy; 2023 | For educational purposes only</p>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
